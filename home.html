@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*#navbar{
+            background-color: navy;
+            border: 10cm;
+            width: 100%;
+            height: 10vw;
+            border-style: solid;
+        } */
+    </style>
+</head>
+<body style="background-color: white;">  
+    <div id="logonav" style="background-color: #022b28;">
+        <a href="home.html" style="text-align: center;"><img src="logo2.png" alt="" style="margin-left: 28%;;"></a>
+    </div> 
+    <div id="navbar" style="height: 2vw; background-color: #012523;">
+        <div id="btn" style="border-style: solid; text-align: center; font-size: 1.5vw; width: 6vw;">
+            Home
+        </div>
+    </div>
+<script>
+    var http = require("http");
+    var server = hhttp.vreateServer(function(req,res)
+    {
+        console.log("request recieved");
+        res.write("hello world");
+        res.end();
+        re.write("another hello world");
+    });
+    server.listen(8080,function(){
+        console.log("listen started at 8080");
+    });
+</script>
+</body>
+</html>
