@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gruppo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Red+Rose:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>  
+        /*#navbar{
+            background-color: navy;
+            border: 10cm;
+            width: 100%;
+            height: 10vw;
+            border-style: solid;
+        } */
+        #choosediv_btn{
+            text-align: center;
+            font-size: 2vw;
+            height: 3vw;
+            width: 12vw;
+            margin: 2vw;
+            background-color: #012523;
+        }
+        #offerings{
+            border-style: solid;
+            margin-bottom: 3vw;
+            width: 100%;
+        }
+
+        #offering_elements{
+            margin-left: 10vw;
+            border-style: solid;
+            height: 36vw;
+            width: 30%;
+            padding: 2vw;
+            margin-bottom: 2vw;
+            display: inline-flex;
+        }
+        #offering_elements_right{
+          margin-left: 25vw;
+          height: 36vw;
+          width: 100%;
+          padding: 2vw;
+          margin-bottom: 2vw;
+          display: inline-flex;
+          border-style: solid;
+        }
+        #textarea{
+            border-style: solid;
+            height: 30vw;
+            width: 100%;
+        }
+        #img{
+            height: 15vw;
+            width: 15vw;
+            border-style: solid;
+            margin-left: 7vw;
+        }
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.container th  {
+    
+    font-weight: bold;
+    font-size: 1em;
+  text-align: left;
+  color: #022b28;
+}
+
+.container td {
+    font-weight: normal;
+    font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+     -moz-box-shadow: 0 2px 2px -2px #0E1119;
+          box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+    margin-top: 3vw;
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+    background-color: rgb(185, 166, 80);
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+    background-color: rgb(160, 147, 87);
+}
+
+.container th {
+    background-color: rgb(218, 190, 68);
+}
+
+.container td:first-child { color: #022b28; }
+
+.container tr:hover {
+   background-color: #FFF842;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+     -moz-box-shadow: 0 6px 6px -6px #0E1119;
+          box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.container td:hover {
+  background-color: #FFF842;
+  color: #403E10;
+  font-weight: bold;
+   
+}
+      .dm-serif text-regular {
+        font-family: "DM Serif Text", serif;
+        font-weight: 200;
+        font-style: normal;
+        }
+
+      .dm-serif text-regular-italic {
+        font-family: "DM Serif Text", serif;
+        font-weight: 200;
+        font-style: italic;
+        }
+        .btmbar{
+  padding-top: 5vh;
+  font-family: Yeseva One, serif;
+  color: #5d6264;
+  width: 100%;
+  height: 69vh;
+  background:url(10026.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: rgba(218, 191, 68, 0.575);
+  background-blend-mode: multiply;
+}
+.azlinks{
+  font-size: 1vw;
+  padding-top: 0vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  color: rgb(218, 190, 68);
+  position: relative;
+  left: 27vw;
+  height: fit-content;
+  width: 18vw;
+  border-radius: 10px;
+  background-color: #012220;
+  box-shadow: 0px 6px 16px  #022b28;
+}
+
+.rplinks{
+  font-size: 1vw;
+  padding-top: 0vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  color: rgb(218, 190, 68);
+  position: relative;
+  left: 37vw;
+  height: fit-content;
+  width: 18vw;
+  border-radius: 10px;
+  background-color: #012220;
+  box-shadow: 0px 6px 16px  #022b28;
+}
+
+.pfb {
+  margin-top: 0.5vh;
+  margin-bottom: 2vh;
+  font-family: 'Afacad', sans-serif;
+  width: 10vw;
+  height: 9vh;
+  border-radius: 5px;
+  position: relative;
+  background-color: rgb(160, 148, 82);
+  padding: 1vw;
+  color: #022b28; /* font color*/
+  font-size: 1.2vw;
+  border: none;
+}
+
+
+.photocard{
+  background-color: rgb(218, 190, 68);
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  padding-bottom: 10px;
+  margin-top: 1vh;
+  height: fit-content;
+  border-radius: 10px;
+  /*box-shadow: 0px 8px 16px 0px #5f94aa;*/
+  }
+  </style>
+</head>
+<body style="background-color: #022b28;">  
+  <div id="logonav" style="background-color: #032e2b; background-image: url(grainy);background-blend-mode: multiply;">
+    <a href="home.html" style="text-align: center;"><img src="logo2.png" alt="" sizes="(min-width: 1600px) 1024px, (min-width: 768px) 50vw, 100vw" style=" margin-left: 28%;;"></a>
+  </div> 
+    <div id="navbar" style="height: 2vw; background-color: #012523; justify-content: center; text-decoration: none">
+      <div id="navbtn" style="display: inline-flex; margin-right: 50%; text-decoration: none;">
+          <a href="home.html">
+              <div id="btn" style=" text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
+              Home
+              </div>
+          </a>
+          <a href="Insurance_home.html">
+              <div id="btn" style="text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
+              Insurance
+              </div>
+          </a>
+          <a href="#">
+              <div id="btn" style=" text-align: center; padding-left: 0.2cm;font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
+              Investments
+              </div>
+          </a>
+      </div>
+      <a href="you.html">
+          <div id="btn" style=" float: right; text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;;color: rgb(218, 190, 68);">
+          You
+          </div>
+      </a>
+  </div>
+    <!-- entire page in page-->
+    <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
+      <div  style="width: auto;padding: 2%; background-image: url(bg4.jpg);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
+        <p class="heading" style=" text-align: center; color: #022b28 ; font-size: 7vw;font-family: Yeseva One, serif">Insurance</p>
+      </div>        
+    <div>
+      <p class="heading" style=" text-align: center; color: #022b28; font-size: 3vw;font-family: DM Serif Text, serif">What we offer</p>
+      <div id="offerings" style="background-image: url(10026.jpg); ">
+        <p style="margin-left: 25vw; margin-bottom: 1vw; font-size: 2.5vw; margin-bottom: 0.1vw;">Offering 1</p>
+        <div id="offering_elements">
+          <div id="textarea">
+            <p style="font-size: 1.5vw; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto omnis quod laborum aspernatur, inventore magni impedit ex voluptate eum a accusantium? Quaerat id minus porro. A, mollitia est ad et nesciunt animi, ullam, optio quae quisquam quaerat sed autem aspernatur. Incidunt officia laboriosam animi vel consequuntur fugit, sed architecto ea!</p>
+          </div>
+          <div id="img"></div>
+          <div id="offering_elements_right">
+            <div id="textarea">
+              <p style="font-size: 1.5vw; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic animi voluptatibus quia ad magnam provident! Dolor doloremque a voluptatibus tempore eaque odio veniam earum quae rem, architecto voluptatum voluptates voluptate nobis ipsam blanditiis ea itaque vel nostrum est facere sint nisi sed cumque enim. Eos totam obcaecati praesentium. Iusto, ullam.</p>
+            </div>
+            <div id="img"></div>
+        </div>
+        <p style="margin-left: 25vw; margin-bottom: 1vw; font-size: 2.5vw; margin-bottom: 0.1vw;">Offering 1</p>
+        </div>
+        <p style="margin-left: 25vw; margin-bottom: 1vw; font-size: 2.5vw; margin-bottom: 0.1vw;">Offering 1</p>
+        <div id="offering_elements">
+          <div id="textarea">
+            <p style="font-size: 1.5vw; ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate fugit unde blanditiis, doloribus nobis, obcaecati molestias sapiente fugiat totam deleniti consequatur deserunt eius soluta suscipit id tempore praesentium dicta veritatis officiis quod harum, laborum illo asperiores! Eos animi temporibus modi quos odit recusandae fugiat asperiores doloribus deleniti officiis?</p>
+          </div>
+          <div id="img"></div>
+        </div>
+      </div>
+    </div>
+        <!--table code  ------------------------------------------------>
+        <p class="term_head" style=" text-align: center; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Term Insurance</p>
+            <table class="container">
+              <thead>
+                <tr>
+                  <th><h1>Plans</h1></th>
+                  <th><h1>Life Cover</h1></th>
+                  <th><h1>Claims Settled</h1></th>
+                  <th><h1>Price /month</h1></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bluecoast iProtect</td>
+                  <td>1Cr</td>
+                  <td>95.58%</td>
+                  <td>663</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Click 2 Protect</td>
+                  <td>1Cr</td>
+                  <td>99.39%</td>
+                  <td>749</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Smart Secure Plus</td>
+                  <td>1Cr </td>
+                  <td>99.51</td>
+                  <td>687</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Life eTouch</td>
+                  <td>1Cr</td>
+                  <td>99.04</td>
+                  <td>473</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="life_head" style=" text-align: center; margin-top: 0.1vw; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Life Insurance</p>
+            <table class="container">
+              <thead>
+                <tr>
+                  <th><h1>Plans</h1></th>
+                  <th><h1>Life Cover</h1></th>
+                  <th><h1>Claims Settled</h1></th>
+                  <th><h1>Price /month</h1></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bluecoast LifeGuarding</td>
+                  <td>1Cr</td>
+                  <td>96.58%</td>
+                  <td>663</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Jeevan Suraksha</td>
+                  <td>1Cr</td>
+                  <td>99.39%</td>
+                  <td>749</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Smart Life</td>
+                  <td>1Cr </td>
+                  <td>97.51</td>
+                  <td>687</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Life eTouch</td>
+                  <td>1Cr</td>
+                  <td>98.04</td>
+                  <td>473</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="health_head" style="margin-top: 0.1vw; text-align: center; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Health Insurance</p>
+            <table class="container">
+              <thead>
+                <tr>
+                  <th><h1>Plans</h1></th>
+                  <th><h1>Life Cover</h1></th>
+                  <th><h1>Claims Settled</h1></th>
+                  <th><h1>Price /month</h1></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bluecoast LifeGuarding</td>
+                  <td>1Cr</td>
+                  <td>96.58%</td>
+                  <td>663</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Jeevan Suraksha</td>
+                  <td>1Cr</td>
+                  <td>99.39%</td>
+                  <td>749</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Smart Life</td>
+                  <td>1Cr </td>
+                  <td>97.51</td>
+                  <td>687</td>
+                </tr>
+                <tr>
+                  <td>Bluecoast Life eTouch</td>
+                  <td>1Cr</td>
+                  <td>98.04</td>
+                  <td>473</td>
+                </tr>
+              </tbody>
+            </table>
+    </div>
+    <div class="btmbar">
+      <div class="credits">
+          <h1 style="text-align: center; font-size: 3vw; margin-bottom: 10vh; color: #022b28;font-family: Yeseva One, serif">Project by</h1>
+          <div class="azlinks" style="float: left;">
+              <h1 style="color: rgb(184, 155, 30);">Anindya <br> Zarbade</h1>
+              <button class="pfb" type="button" onclick=" window.open('http://google.com','_blank')">Visit
+                  Portfolio</button>
+              <h1 style="font-size:1.3vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">View LinkdIn Profile</h1>
+              <a target="_blank" href="https://www.linkedin.com/in/anindyazarbade/"><img src="linkdin logo.png"
+                      style="height: 7.5vh;  width: 3.5vw;" alt=""></a>
+
+          </div>
+          <div class="rplinks" style="float: left;">
+              <h1 style="color: rgb(184, 155, 30);">Rhea <br> Patel</h1>
+              <button class="pfb" type="button" onclick=" window.open('http://google.com','_blank')" >Visit
+                  Portfolio</button>
+              <h1 style="font-size:1.3vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">View LinkdIn Profile</h1>
+              <a target="_blank" href="https://www.linkedin.com/in/rhea-patel-83b1a2256/"><img
+                      src="linkdin logo.png" style="height: 7.5vh;  width: 3.5vw; " alt=""></a>
+          </div>
+          <div style="width: 10vw; height: 10vw; margin-left: 50vw; position: absolute; margin-top: -3.5vw;">
+            <img src="rhea.jfif" style="border-radius: 50%;width: 9.5vw;border-style: solid; border-color: #012220; box-shadow:0px 6px 16px  #022b28b0;">
+        </div>
+        <div style="width: 10vw; height: 10vw; position: absolute;margin-left: 21vw;margin-top: -3.5vw; ">
+            <img src="anindya2.jpg" style="border-radius: 50%;width: 9.5vw; border-style: solid; border-color: #012220; box-shadow: 0px 6px 16px  #022b28b0;">
+        </div>
+      </div>
+</body>
+</html>

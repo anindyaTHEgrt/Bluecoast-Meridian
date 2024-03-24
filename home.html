@@ -19,10 +19,14 @@
         #choosediv_btn{
             text-align: center;
             font-size: 2vw;
-            height: 3vw;
-            width: 12vw;
-            margin: 2vw;
-            background-color: #012523;
+            height: 6vw;
+            width: 16vw;
+            margin: 3vw;
+            background-color: rgba(197, 196, 189, 0.61);
+            border-radius: 0.2cm;
+            padding: 0.4cm;
+            font-family: "Merriweather", serif;
+            font-size: 400;
         }
         .red-rose-font{
         font-family: "Red Rose", serif;
@@ -88,22 +92,90 @@
         font-weight: 900;
         font-style: italic;
         }
+.btmbar{
+  padding-top: 5vh;
+  font-family: Yeseva One, serif;
+  color: #5d6264;
+  width: 100%;
+  height: 69vh;
+  background:url(10026.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: rgba(218, 191, 68, 0.575);
+  background-blend-mode: multiply;
+}
+.azlinks{
+  font-size: 1vw;
+  padding-top: 0vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  color: rgb(218, 190, 68);
+  position: relative;
+  left: 27vw;
+  height: fit-content;
+  width: 18vw;
+  border-radius: 10px;
+  background-color: #012220;
+  box-shadow: 0px 6px 16px  #022b28;
+}
 
+.rplinks{
+  font-size: 1vw;
+  padding-top: 0vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  color: rgb(218, 190, 68);
+  position: relative;
+  left: 37vw;
+  height: fit-content;
+  width: 18vw;
+  border-radius: 10px;
+  background-color: #012220;
+  box-shadow: 0px 6px 16px  #022b28;
+}
+
+.pfb {
+  margin-top: 0.5vh;
+  margin-bottom: 2vh;
+  font-family: 'Afacad', sans-serif;
+  width: 10vw;
+  height: 9vh;
+  border-radius: 5px;
+  position: relative;
+  background-color: rgb(160, 148, 82);
+  padding: 1vw;
+  color: #022b28; /* font color*/
+  font-size: 1.2vw;
+  border: none;
+}
+
+
+.photocard{
+  background-color: rgb(218, 190, 68);
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  padding-bottom: 10px;
+  margin-top: 1vh;
+  height: fit-content;
+  border-radius: 10px;
+  /*box-shadow: 0px 8px 16px 0px #5f94aa;*/
+  }
     </style>
 </head>
 <body style="background-color: #022b28;">  
     <div id="logonav" style="background-color: #032e2b; background-image: url(grainy);background-blend-mode: multiply;">
-        <a href="home.html" style="text-align: center;"><img src="logo2.png" alt="" style="margin-left: 28%;;"></a>
+        <a href="home.html" style="text-align: center;"><img src="logo2.png" alt="" sizes="(min-width: 1600px) 1024px, (min-width: 768px) 50vw, 100vw" style=" margin-left: 28%;;"></a>
     </div> 
     <div id="navbar" style="height: 2vw; background-color: #012523; justify-content: center; text-decoration: none">
-        <div id="navbtn" style="display: inline-flex; margin-right: 50%;">
+        <div id="navbtn" style="display: inline-flex; margin-right: 50%; text-decoration: none;">
             <a href="#">
                 <div id="btn" style=" text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
                 Home
                 </div>
             </a>
             <a href="Insurance_home.html">
-                <div id="btn" style=" text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
+                <div id="btn" style="text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
                 Insurance
                 </div>
             </a>
@@ -113,8 +185,8 @@
                 </div>
             </a>
         </div>
-        <a href="#">
-            <div id="btn" style=" float: right; text-align: center; font-size: 1.5vw; width: 6vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(218, 190, 68);">
+        <a href="you.html" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+            <div id="btn" style=" float: right; text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;;color: rgb(218, 190, 68);">
             You
             </div>
         </a>
@@ -122,29 +194,56 @@
     <!-- entire page in page-->
     <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
 
-        <div style="width: auto;padding: 2%; background-image: url(imgbg1.jpg); background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
+        <div  style="width: auto;padding: 2%; background-image: url(fin1.jpg);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
             <p class="heading" style="text-align: center;font-family: Yeseva One, serif; color: #022b28; font-size: 3vw;">Finance, Reborn</p>
-            <div style="border-radius: 0.5cm; margin-left: auto; margin-right: auto; width: 40%; background-color: rgba(218, 191, 68, 0.61); padding: 0.2cm;">
+            <div style="border-radius: 0.5cm; margin-left: auto; margin-right: auto; width: 40%; background-color: rgba(197, 196, 189, 0.61); padding: 0.2cm;">
                 <p style="font-size: 1.5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">With a team of 4,200 talented financial services specialists on the ground in over 40 
                     countries across the world, we deliver a unique global perspective across four market
                     -leading business divisions.</p>
             </div>
         </div>
-        <div id="selector" style="border-style: solid; margin-right: auto; margin-left: auto; margin-top: 6vw;">
-            <p style="text-align: center; font-size: 2vw;">Choose what you want to do</p>
-            <div id="choosediv" style="margin-left: 31vw; border-style: solid; display: inline-flex;">
+        <div id="selector" style=" margin-right: auto; margin-left: auto; margin-top: 6vw; background-image: url(v915-wit-001-d.jpg); background-color: #022b28;background-blend-mode: multiply; background-repeat: no repeat; background-size: 70%;">
+            <p style="text-align: center; font-size: 2.5vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68)"> <br><br>Choose what you want to do</p>
+            <div id="choosediv" style="margin-left: 25vw; display: inline-flex;">
                 
                 <div id="choosediv_btn">
-                    <a href="Insurance_home.html"><p style="margin-top: 0.3vw;">Insurance</p></a>
+                    <a href="Insurance_home.html"><p style="margin-top: 1.5vw; color: black;">Insurance</p></a>
                 </div>            
                
                 <div id="choosediv_btn">
-                    <a href=""><p style="margin-top: 0.3vw;">Investments</p></a>
+                    <a href=""><p style="margin-top: 1.5vw; color: black;">Investments</p></a>
                 </div>
                 
             </div>
         </div>
     </div>
+    <div class="btmbar">
+        <div class="credits">
+            <h1 style="text-align: center; font-size: 3vw; margin-bottom: 10vh; color: #022b28;font-family: Yeseva One, serif">Project by</h1>
+            <div class="azlinks" style="float: left;">
+                <h1 style="color: rgb(184, 155, 30);">Anindya <br> Zarbade</h1>
+                <button class="pfb" type="button" onclick=" window.open('http://google.com','_blank')">Visit
+                    Portfolio</button>
+                <h1 style="font-size:1.3vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">View LinkdIn Profile</h1>
+                <a target="_blank" href="https://www.linkedin.com/in/anindyazarbade/"><img src="linkdin logo.png"
+                        style="height: 7.5vh;  width: 3.5vw;" alt=""></a>
 
+            </div>
+            <div class="rplinks" style="float: left;">
+                <h1 style="color: rgb(184, 155, 30);">Rhea <br> Patel</h1>
+                <button class="pfb" type="button" onclick=" window.open('http://google.com','_blank')" >Visit
+                    Portfolio</button>
+                <h1 style="font-size:1.3vw;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">View LinkdIn Profile</h1>
+                <a target="_blank" href="https://www.linkedin.com/in/rhea-patel-83b1a2256/"><img
+                        src="linkdin logo.png" style="height: 7.5vh;  width: 3.5vw; " alt=""></a>
+            </div>
+            <div style="width: 10vw; height: 10vw; margin-left: 50vw; position: absolute; margin-top: -3.5vw;">
+                <img src="rhea.jfif" style="border-radius: 50%;width: 9.5vw;border-style: solid; border-color: #012220; box-shadow:0px 6px 16px  #022b28b0;">
+            </div>
+            <div style="width: 10vw; height: 10vw; position: absolute;margin-left: 21vw;margin-top: -3.5vw; ">
+                <img src="anindya2.jpg" style="border-radius: 50%;width: 9.5vw; border-style: solid; border-color: #012220; box-shadow: 0px 6px 16px  #022b28b0;">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
