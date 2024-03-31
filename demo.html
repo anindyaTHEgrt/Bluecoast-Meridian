@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gruppo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Red+Rose:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>  
+    /* Your existing styles */
+  </style>
+</head>
+
+<body style="background-color: #022b28;">
+    <div id="logonav" style="background-color: #032e2b; background-image: url(grainy);background-blend-mode: multiply;">
+      <a href="home.html" style="text-align: center;"><img src="logo2.png" alt="" sizes="(min-width: 1600px) 1024px, (min-width: 768px) 50vw, 100vw" style=" margin-left: 28%;;"></a>
+    </div>
+    <div id="navbar" style="height: 2vw; background-color: #012523; justify-content: center; text-decoration: none">
+      <div id="navbtn" style="display: inline-flex; margin-right: 50%; text-decoration: none;">
+        <a href="home.html">
+          <div id="btn" style=" text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
+            Home
+          </div>
+        </a>
+        <a href="Insurance_home.html">
+          <div id="btn" style="text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
+            Insurance
+          </div>
+        </a>
+        <a href="investment_home.html">
+          <div id="btn" style=" text-align: center; padding-left: 0.2cm;font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
+            Investments
+          </div>
+        </a>
+        <a href="#">
+          <div id="btn" style=" text-align: center; padding-left: 0.4cm;font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
+            Calculators
+          </div>
+        </a>
+      </div>
+      <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 89vw;margin-top: 12.3%;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="avatar.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="containerform">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+          <div class="container" style="background-color:rgb(196, 184, 134)">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
+      <div style="width: auto;padding: 2%; background-image: url(photo-1490318134124-34dadea1b8b2.avif);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
+        <p class="heading" style=" text-align: center; color: #022b28 ; font-size: 7vw;font-family: Yeseva One, serif">Investments</p>
+      </div>
+      <div>
+        <p class="heading" style=" text-align: center; color: #022b28; font-size: 3vw;font-family: DM Serif Text, serif">What we offer</p>
+        <div id="offerings" style="background-image: url(10026.jpg); background-color: rgba(243, 243, 174, 0.692); background-blend-mode: multiply; ">
+          <div id="offering_elements">
+            <img src="fin1.jpg" alt="">
+            <div id="textarea">
+              <p style="margin-left: 10vw; font-size: 2vw; ">Offering 1</p>
+              <p style="font-size: 1.5vw;margin-left: 4vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            </div>
+          </div>
+  
+          <div id="offering_elements">
+            <img src="c2.jpg" alt="">
+            <div id="textarea">
+              <p style="margin-left: 10vw; font-size: 2vw; ">Offering 1</p>
+              <p style="font-size: 1.5vw;margin-left: 4vw; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            </div>
+          </div>
+          <br><br><br><br><br><br>
+          <div id="offering_elements">
+            <img src="c3.jpg" alt="">
+            <div id="textarea">
+              <p style="margin-left: 10vw; font-size: 2vw; ">Offering 1</p>
+              <p style="font-size: 1.5vw;margin-left: 4vw; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+  
+          <div id="offering_elements">
+            <img src="c4.jpg" alt="">
+            <div id="textarea">
+              <p style="margin-left: 10vw; font-size: 2vw; ">Offering 1</p>
+              <p style="font-size: 1.5vw;margin-left: 4vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <br><br><br><br><br><br><br><br>
+        </div>
+      </div>
+      <p class="term_head" style=" text-align: center; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Funds in Focus</p>
+      <div id="mutualdiv">
+        <div class="container">
+          <div class="row pt-5 m-auto">
+            <div class="col-md-6 col-lg-4 pb-3">
+              <div class="card card-custom bg-white border-white border-0">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-3">
+              <div class="card card-custom bg-white border-white border-0">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="life_head" style=" text-align: center; margin-top: 0.1vw; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Investment Insights</p>
+      <p class="health_head" style="margin-top: 0.1vw; text-align: center; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Health Insurance</p>
+    </div><br>
+    <div class="btmbar"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  
+  </html>

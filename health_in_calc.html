@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gruppo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Red+Rose:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+.container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background-color: #022b28;">  
+    <div id="logonav" style="background-color: #032e2b; background-image: url(grainy);background-blend-mode: multiply;">
+        <a href="home.html" style="text-align: center;"><img src="logo2.png" alt="" sizes="(min-width: 1600px) 1024px, (min-width: 768px) 50vw, 100vw" style=" margin-left: 28%;;"></a>
+    </div> 
+    <div id="navbar" style="height: 2vw; background-color: #012523; justify-content: center;">
+        <div id="navbtn" style="display: inline-flex; margin-right: 50%; text-decoration: none;">
+            <a href="#">
+                <div id="btn" style=" text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
+                Home <i class="fa fa-caret-down"></i>
+                </div>
+            </a>
+            <a href="Insurance_home.html">
+                <div id="btn" style="text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
+                Insurance
+                </div>
+            </a>
+            <a href="investment_home.html">
+                <div id="btn" style=" text-align: center; padding-left: 0.2cm;font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
+                Investments
+                </div>
+            </a>
+            <div class="subnav">
+                <button class="subnavbtn">Calculators <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="health_in_calc.html">Health Insurance</a>
+                  <a href="term_in_calc.html">Term Insurance</a>
+                  <a href="life_in_calc.html">Life Insurance</a>
+                </div>
+              </div>
+        </div>
+        <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 89vw;margin-top: 12.3%;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
+          <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="avatar.png" alt="Avatar" class="avatar">
+                  </div>
+                  <div class="containerform">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                      <button type="submit">Login</button>
+                      <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                  </div>
+                  <div class="container" style="background-color:rgb(196, 184, 134)">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+              </form>
+        </div>
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event)
+        {
+            if (event.target == modal)
+            {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        </div>
+    </div>
+    <!-- entire page in page-->
+    <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
+        <div  style="width: auto;padding: 2%; background-image: url(fin1.jpg);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
+            <p class="heading" style="text-align: center;font-family: Yeseva One, serif; color: #022b28; font-size: 3vw;">Health Insurance</p>
+            <div style="border-radius: 0.5cm; margin-left: auto; margin-right: auto; width: 60%; background-color: rgba(197, 196, 189, 0.61); padding: 0.2cm;">
+                <p style="font-size: 1.5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Health insurance is vital for financial security, covering medical expenses and reducing stress during emergencies. It encourages preventive care, leading to early detection of health issues and better overall health outcomes. Additionally, it provides access to a wide network of healthcare providers, ensuring timely and quality treatment.
+                    -leading business divisions.</p>
+            </div>
+        </div>
+        <div class="container">
+          <h1>Health Insurance Calculator</h1>
+          <form id="insuranceForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br><br>
+  
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" min="0" required><br><br>
+  
+              <label for="annualIncome">Annual Income (Rs):</label>
+              <input type="number" id="annualIncome" name="annualIncome" min="0" required><br><br>
+  
+              <label for="occupation">Occupation:</label>
+              <select id="occupation" name="occupation">
+                  <option value="Doctor">Doctor</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Engineer">Engineer</option>
+                  <option value="Other">Other</option>
+              </select><br><br>
+  
+              <label for="medicalConditions">Do you have any medical conditions?</label><br>
+              <input type="checkbox" id="diabetes" name="medicalCondition" value="Diabetes">
+              <label for="diabetes">Diabetes</label><br>
+              <input type="checkbox" id="bloodPressure" name="medicalCondition" value="Blood Pressure">
+              <label for="bloodPressure">Blood Pressure</label><br>
+              <input type="checkbox" id="surgery" name="medicalCondition" value="Surgery">
+              <label for="surgery">Surgery</label><br>
+              <input type="checkbox" id="thyroid" name="medicalCondition" value="Thyroid">
+              <label for="thyroid">Thyroid</label><br>
+              <input type="checkbox" id="asthma" name="medicalCondition" value="Asthma">
+              <label for="asthma">Asthma</label><br>
+              <input type="checkbox" id="otherDisease" name="medicalCondition" value="Other Disease">
+              <label for="otherDisease">Other Disease</label><br>
+              <input type="checkbox" id="none" name="medicalCondition" value="None">
+              <label for="none">None of these</label><br><br>
+  
+              <button type="button" onclick="calculatePremium()">Calculate Premium</button>
+          </form>
+  
+          <div id="result"></div>
+      </div>
+    </div>
+    <br>
+    <div class="btmbar">
+        
+    </div>
+    <script>
+      function calculatePremium() {
+          var name = document.getElementById('name').value;
+          var age = parseInt(document.getElementById('age').value);
+          var annualIncome = parseInt(document.getElementById('annualIncome').value);
+          var occupation = document.getElementById('occupation').value;
+          var medicalConditions = [];
+
+          var checkboxes = document.getElementsByName('medicalCondition');
+          checkboxes.forEach(function(checkbox) {
+              if (checkbox.checked) {
+                  medicalConditions.push(checkbox.value);
+              }
+          });
+
+          var basePremium = 1000; // Placeholder base premium
+          var ageFactor = getAgeFactor(age);
+          var incomeFactor = getIncomeFactor(annualIncome);
+          var medicalConditionFactor = getMedicalConditionFactor(medicalConditions.length);
+
+          // Adjust base premium based on factors
+          var premium = basePremium * ageFactor * incomeFactor * medicalConditionFactor;
+
+          var resultDiv = document.getElementById('result');
+          resultDiv.innerHTML = "Health Insurance Premium for " + name + ": Rs" + premium.toFixed(2);
+      }
+
+      function getAgeFactor(age) {
+          if (age < 18) {
+              return 0.8; // 20% discount for below 18
+          } else if (age >= 18 && age < 30) {
+              return 1.0; // No change for 18-29
+          } else if (age >= 30 && age < 35) {
+              return 1.1; // 10% increase for 30-34
+          } else if (age >= 35 && age < 40) {
+              return 1.2; // 20% increase for 35-39
+          } else {
+              return 1.4; // 40% increase for 40+
+          }
+      }
+
+      function getIncomeFactor(annualIncome) {
+          if (annualIncome < 30000) {
+              return 0.8; // 20% discount for income less than $30,000
+          } else if (annualIncome >= 30000 && annualIncome < 50000) {
+              return 1.0; // No change for income between $30,000 and $50,000
+          } else if (annualIncome >= 50000 && annualIncome < 70000) {
+              return 1.2; // 20% increase for income between $50,000 and $70,000
+          } else {
+              return 1.4; // 40% increase for income above $70,000
+          }
+      }
+
+      function getMedicalConditionFactor(conditionCount) {
+          if (conditionCount === 0) {
+              return 1.0; // No change if no medical condition
+          } else {
+              return 1.2 + (conditionCount * 0.1); // 20% base increase plus 10% for each additional condition
+          }
+      }
+  </script>
+</body>
+</html>

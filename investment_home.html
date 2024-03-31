@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>  
-        
+       
         #offerings{
             margin-bottom: 3vw;
             width: 100%;
@@ -53,79 +53,7 @@
 .blue { color: #185875; }
 .yellow { color: #FFF842; }
 
-.container th  {
-    
-    font-weight: bold;
-    font-size: 1em;
-  text-align: left;
-  color: #022b28;
-}
 
-.container td {
-    font-weight: normal;
-    font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-     -moz-box-shadow: 0 2px 2px -2px #0E1119;
-          box-shadow: 0 2px 2px -2px #0E1119;
-}
-
-.container {
-    margin-top: 3vw;
-    text-align: left;
-    overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
-  display: table;
-  padding: 0 0 8em 0;
-}
-
-.container td, .container th {
-    padding-bottom: 2%;
-    padding-top: 2%;
-  padding-left:2%;  
-}
-
-/* Background-color of the odd rows */
-.container tr:nth-child(odd) {
-    background-color: rgb(185, 166, 80);
-}
-
-/* Background-color of the even rows */
-.container tr:nth-child(even) {
-    background-color: rgb(160, 147, 87);
-}
-
-.container th {
-    background-color: rgb(218, 190, 68);
-}
-
-.container td:first-child { color: #022b28; }
-
-.container tr:hover {
-   background-color: #FFF842;
--webkit-box-shadow: 0 6px 6px -6px #0E1119;
-     -moz-box-shadow: 0 6px 6px -6px #0E1119;
-          box-shadow: 0 6px 6px -6px #0E1119;
-}
-
-.container td:hover {
-  background-color: #FFF842;
-  color: #403E10;
-  font-weight: bold;
-   
-}
-      .dm-serif text-regular {
-        font-family: "DM Serif Text", serif;
-        font-weight: 200;
-        font-style: normal;
-        }
-
-      .dm-serif text-regular-italic {
-        font-family: "DM Serif Text", serif;
-        font-weight: 200;
-        font-style: italic;
-        }
-        
   </style>
 </head>
 <body style="background-color: #022b28;">  
@@ -160,7 +88,7 @@
       </div>
       <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 89vw;margin-top: 12.3%;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
         <div id="id01" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
+            <form class="modal-content animate" action="/submitForm" method="post">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <img src="avatar.png" alt="Avatar" class="avatar">
@@ -197,8 +125,8 @@
   </div>
     <!-- entire page in page-->
     <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
-      <div  style="width: auto;padding: 2%; background-image: url(bg4.jpg);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
-        <p class="heading" style=" text-align: center; color: #022b28 ; font-size: 7vw;font-family: Yeseva One, serif">Insurance</p>
+      <div  style="width: auto;padding: 2%; background-image: url(photo-1490318134124-34dadea1b8b2.avif);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
+        <p class="heading" style=" text-align: center; color: #022b28 ; font-size: 7vw;font-family: Yeseva One, serif">Investments</p>
       </div>        
     <div>
       <p class="heading" style=" text-align: center; color: #022b28; font-size: 3vw;font-family: DM Serif Text, serif">What we offer</p>
@@ -234,127 +162,158 @@
             <p style="font-size: 1.5vw;margin-left: 4vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
-        <br><br><br><br><br><br><br><br>
+        <br><br><br><br>
       </div>
     </div>
-        <!--table code  ------------------------------------------------>
-        <p class="term_head" style=" text-align: center; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Term Insurance</p>
-            <table class="container">
-              <thead>
-                <tr>
-                  <th><h1>Plans</h1></th>
-                  <th><h1>Life Cover</h1></th>
-                  <th><h1>Claims Settled</h1></th>
-                  <th><h1>Price /month</h1></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Bluecoast iProtect</td>
-                  <td>1Cr</td>
-                  <td>95.58%</td>
-                  <td>663</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Click 2 Protect</td>
-                  <td>1Cr</td>
-                  <td>99.39%</td>
-                  <td>749</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Smart Secure Plus</td>
-                  <td>1Cr </td>
-                  <td>99.51</td>
-                  <td>687</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Life eTouch</td>
-                  <td>1Cr</td>
-                  <td>99.04</td>
-                  <td>473</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p class="life_head" style=" text-align: center; margin-top: 0.1vw; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Life Insurance</p>
-            <table class="container">
-              <thead>
-                <tr>
-                  <th><h1>Plans</h1></th>
-                  <th><h1>Life Cover</h1></th>
-                  <th><h1>Claims Settled</h1></th>
-                  <th><h1>Price /month</h1></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Bluecoast LifeGuarding</td>
-                  <td>1Cr</td>
-                  <td>96.58%</td>
-                  <td>663</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Jeevan Suraksha</td>
-                  <td>1Cr</td>
-                  <td>99.39%</td>
-                  <td>749</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Smart Life</td>
-                  <td>1Cr </td>
-                  <td>97.51</td>
-                  <td>687</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Life eTouch</td>
-                  <td>1Cr</td>
-                  <td>98.04</td>
-                  <td>473</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p class="health_head" style="margin-top: 0.1vw; text-align: center; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif">Health Insurance</p>
-            <table class="container">
-              <thead>
-                <tr>
-                  <th><h1>Plans</h1></th>
-                  <th><h1>Life Cover</h1></th>
-                  <th><h1>Claims Settled</h1></th>
-                  <th><h1>Price /month</h1></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Bluecoast LifeGuarding</td>
-                  <td>1Cr</td>
-                  <td>96.58%</td>
-                  <td>663</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Jeevan Suraksha</td>
-                  <td>1Cr</td>
-                  <td>99.39%</td>
-                  <td>749</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Smart Life</td>
-                  <td>1Cr </td>
-                  <td>97.51</td>
-                  <td>687</td>
-                </tr>
-                <tr>
-                  <td>Bluecoast Life eTouch</td>
-                  <td>1Cr</td>
-                  <td>98.04</td>
-                  <td>473</td>
-                </tr>
-              </tbody>
-            </table>
-    </div>
-    <br>
-    <div class="btmbar">
-
-    </div>
-</body>
-</html>
+        <!--Mutual Funds  ------------------------------------------------>
+        <div style="background-color: rgb(196, 184, 134);height: 10vw; width: 100%;">
+          <p id="term_head" style=" text-align: center; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif;">Funds in Focus</p>
+        </div>
+        <div id="mutualdiv">
+          <i></i>
+          <div id="card" style="margin-right: 8%;">
+            <div id="mutual_img">
+              <img src="Top-topics-podcast-cropped-1.jpg" alt="">
+            </div>
+            <div id="mutual_text">
+              <p id="mutual_heading"> Bluecoast Meridian LifeGuarding</p>
+              <p id="mutual_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, velit.</p>
+            </div>
+            <!--<div>-->
+              <ul id="mutual_col">
+                <li id="mutual_col_item" style="border-bottom: 0;">Cras justo odio</li>
+                <li id="mutual_col_item" style="border-bottom: 0;">Dapibus ac facilisis in</li>
+                <li id="mutual_col_item">Vestibulum at eros</li>
+              </ul>
+            <!--</div>-->
+          </div>
+          <div id="card" style="margin-right: 5%;">
+            <div id="mutual_img">
+              <img src="Top-topics-podcast-cropped-1.jpg" alt="">
+            </div>
+            <div id="mutual_text">
+              <p id="mutual_heading"> Bluecoast Meridian LifeGuarding</p>
+              <p id="mutual_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, velit.</p>
+            </div>
+            <!--<div>-->
+              <ul id="mutual_col">
+                <li id="mutual_col_item" style="border-bottom: 0;">Cras justo odio</li>
+                <li id="mutual_col_item" style="border-bottom: 0;">Dapibus ac facilisis in</li>
+                <li id="mutual_col_item">Vestibulum at eros</li>
+              </ul>
+            <!--</div>-->
+          </div>
+          <div id="card" style="margin-left: 2%;">
+            <div id="mutual_img">
+              <img src="Top-topics-podcast-cropped-1.jpg" alt="">
+            </div>
+            <div id="mutual_text">
+              <p id="mutual_heading"> Bluecoast Meridian LifeGuarding</p>
+              <p id="mutual_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, velit.</p>
+            </div>
+            <!--<div>-->
+              <ul id="mutual_col">
+                <li id="mutual_col_item" style="border-bottom: 0;">Cras justo odio</li>
+                <li id="mutual_col_item" style="border-bottom: 0;">Dapibus ac facilisis in</li>
+                <li id="mutual_col_item">Vestibulum at eros</li>
+              </ul>
+            <!--</div>-->
+          </div>
+        </div>
+      </div>
+      <!--Stocjs------------------------------------------------>
+      <p class="term_head" style=" text-align: center; color: rgb(207, 172, 31); font-size: 5vw;font-family: DM Serif Text, serif">Trending Stocks</p>
+      <table class="container">
+        <thead>
+          <tr>
+            <th><h1>Stock </h1></th>
+            <th><h1>Closing Price</h1></th>
+            <th><h1>% Change</h1></th>
+            <th><h1>Change</h1></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bluecoast Meridian</td>
+            <td>1563</td>
+            <td>3.2%</td>
+            <td>36</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>635</td>
+            <td>2.5%</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>Samsung</td>
+            <td>843</td>
+            <td>7.9%</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <td>BMW</td>
+            <td>1332</td>
+            <td>8.04%</td>
+            <td>83</td>
+          </tr>
+        </tbody>
+      </table>
+      <!--Properity listing ------------------------------------------------>
+      <div style="background-color: rgb(196, 184, 134);height: 10vw; width: 100%;">
+        <p id="term_head" style=" text-align: center; color: #022b28; font-size: 5vw;font-family: DM Serif Text, serif;">Top Properties</p>
+      </div>
+      <div id="mutualdiv">
+        <i></i>
+        <div id="card" style="margin-right: 8%;">
+          <div id="mutual_img">
+            <img src="homepage-background.jpg" alt="">
+          </div>
+          <div id="mutual_text">
+            <p id="mutual_heading"> Bluecoast Meridian LifeGuarding</p>
+            <p id="mutual_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, velit.</p>
+          </div>
+          <!--<div>-->
+            <ul id="mutual_col">
+              <li id="mutual_col_item" style="border-bottom: 0;">Cras justo odio</li>
+              <li id="mutual_col_item" style="border-bottom: 0;">Dapibus ac facilisis in</li>
+              <li id="mutual_col_item">Vestibulum at eros</li>
+            </ul>
+          <!--</div>-->
+        </div>
+        <div id="card" style="margin-right: 5%;">
+          <div id="mutual_img">
+            <img src="homepage-background.jpg" alt="">
+          </div>
+          <div id="mutual_text">
+            <p id="mutual_heading"> Bluecoast Meridian LifeGuarding</p>
+            <p id="mutual_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, velit.</p>
+          </div>
+          <!--<div>-->
+            <ul id="mutual_col">
+              <li id="mutual_col_item" style="border-bottom: 0;">Cras justo odio</li>
+              <li id="mutual_col_item" style="border-bottom: 0;">Dapibus ac facilisis in</li>
+              <li id="mutual_col_item">Vestibulum at eros</li>
+            </ul>
+          <!--</div>-->
+        </div>
+        <div id="card" style="margin-left: 2%;">
+          <div id="mutual_img">
+            <img src="homepage-background.jpg" alt="">
+          </div>
+          <div id="mutual_text">
+            <p id="mutual_heading"> Bluecoast Meridian LifeGuarding</p>
+            <p id="mutual_body"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, velit.</p>
+          </div>
+          <!--<div>-->
+            <ul id="mutual_col">
+              <li id="mutual_col_item" style="border-bottom: 0;">Cras justo odio</li>
+              <li id="mutual_col_item" style="border-bottom: 0;">Dapibus ac facilisis in</li>
+              <li id="mutual_col_item">Vestibulum at eros</li>
+            </ul>
+          <!--</div>-->
+        </div>
+      </div><br>
+    <div class="btmbar"></div>
+  </body>
+  </html>
