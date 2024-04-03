@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gruppo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Red+Rose:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="C:\Users\anind\Downloads\Bluecoast-Meridian-main\style.css">
     <title>Document</title>
     
 </head>
@@ -16,17 +16,17 @@
     </div> 
     <div id="navbar" style="height: 2vw; background-color: #012523; justify-content: center;">
         <div id="navbtn" style="display: inline-flex; margin-right: 50%; text-decoration: none;">
-            <a href="#">
+            <a href="home.html" style="text-decoration: none;">
                 <div id="btn" style=" text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
                 Home <i class="fa fa-caret-down"></i>
                 </div>
             </a>
-            <a href="Insurance_home.html">
+            <a href="Insurance_home.html" style="text-decoration: none;">
                 <div id="btn" style="text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
                 Insurance
                 </div>
             </a>
-            <a href="investment_home.html">
+            <a href="investment_home.html" style="text-decoration: none;">
                 <div id="btn" style=" text-align: center; padding-left: 0.2cm;font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
                 Investments
                 </div>
@@ -41,18 +41,18 @@
               </div>
             </div>
         </div>
-        <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 89vw;margin-top: 12.3%;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
+        <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 9vw;margin-top: 12.5vw;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
           <div id="id01" class="modal">
-              <form class="modal-content animate" action="/action_page.php" method="post">
+              <form class="modal-content animate" action="/details" method="post" >
                   <div class="imgcontainer">
                       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                       <img src="avatar.png" alt="Avatar" class="avatar">
                   </div>
                   <div class="containerform">
-                      <label for="uname"><b>Username</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname" required>
-                      <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
+                      <label for="username"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="username" id="username" required>
+                      <label for="password"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="password" id="password" required>
                       <button type="submit">Login</button>
                       <label>
                           <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -65,16 +65,7 @@
               </form>
         </div>
         <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event)
-        {
-            if (event.target == modal)
-            {
-                modal.style.display = "none";
-            }
-        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         </script>
         </div>
     </div>
@@ -82,31 +73,44 @@
     <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
 
         <div  style="width: auto;padding: 2%; background-image: url(fin1.jpg);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
-            <p class="heading" style="text-align: center;font-family: Yeseva One, serif; color: #022b28; font-size: 3vw;">Finance, Reborn</p>
+            <p class="heading" style="text-align: center;font-family: Yeseva One, serif; color: #022b28; font-size: 3vw;animation: head_ani ease-in-out 1.5s;">Finance, Reborn</p>
             <div style="border-radius: 0.5cm; margin-left: auto; margin-right: auto; width: 40%; background-color: rgba(197, 196, 189, 0.61); padding: 0.2cm;">
-                <p style="font-size: 1.5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">With a team of 4,200 talented financial services specialists on the ground in over 40 
+                <p style="font-size: 1.5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;animation: head_ani ease-in-out 1.5s;">With a team of 4,200 talented financial services specialists on the ground in over 40 
                     countries across the world, we deliver a unique global perspective across four market
                     -leading business divisions.</p>
             </div>
         </div>
         <div id="selector" style=" margin-right: auto; margin-left: auto; margin-top: 6vw; background-image: url(v915-wit-001-d.jpg); background-color: #022b28;background-blend-mode: multiply; background-repeat: no repeat; background-size: 70%;">
-            <p style="text-align: center; font-size: 2.5vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68)"> <br><br>Choose what you want to do</p>
+            <p style="text-align: center; font-size: 2.5vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);animation: head_ani ease-in-out 1.5s;"> <br><br>Choose what you want to do</p>
             <div id="choosediv" style="margin-left: 25vw; display: inline-flex;">
                 
                 <div id="choosediv_btn">
-                    <a href="Insurance_home.html"><p style="margin-top: 1.5vw; color: black;">Insurance</p></a>
+                    <a href="Insurance_home.html" style="text-decoration: none;"><p style="margin-top: 1.5vw; color: black;">Insurance</p></a>
                 </div>            
                
                 <div id="choosediv_btn">
-                    <a href=""><p style="margin-top: 1.5vw; color: black;">Investments</p></a>
+                    <a href="investment_home.html" style="text-decoration: none;"><p style="margin-top: 1.5vw; color: black;">Investments</p></a>
                 </div>
                 
             </div>
         </div>
     </div>
     <br>
-    <div class="btmbar">
-        
+    <div id="btmbar_above">
+        <div id="btm_link"> 
+          <ul style="color: #aaabac;; list-style: none; margin-top: -0.8vw; margin-left: 4vw;">
+            <li><a href="home.html" style="text-decoration: none;color: #aaabac;">Home</a></li>
+            <li style="margin-top: 0.6vw;"><a href="Insurance_home.html" style="text-decoration: none;color: #aaabac;">Insurance</a></li>
+            <li style="margin-top: 0.6vw;"><a href="investment_home.html" style="text-decoration: none;color: #aaabac;">Investment</a></li>
+          </ul>
+        </div>
+        <div id="btm_contact">
+          <a href="https://www.linkedin.com/in/rhea-patel/"><img src="linkdin logo.png" alt="linkdinlogo" style="width: 3vw;height: 3vw; margin-left: 83vw;margin-top: -7vw;position: absolute;"></a>
+          <a href="https://www.linkedin.com/in/anindyazarbade/"><img src="linkdin logo.png" alt="linkdinlogo" style="width: 3vw;height: 3vw; margin-left: 88vw;margin-top: -7vw;position: absolute;"></a>
+        </div>
+      </div>
+      <div class="btmbar">
+        <p style="margin-left: 73vw;margin-top: -1.2vw;">Bluecoast Meridian Finance Services <h4 style="margin-top: -2.7vw; margin-left: 92.5vw;">&copy;</h4></p>
     </div>
 </body>
 </html>

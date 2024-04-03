@@ -14,8 +14,11 @@
             width: 90%;
             margin: 0 auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid none;
             border-radius: 5px;
+            padding: 16px;
+            background-color: rgb(196, 184, 134);
+            color: #012523;
         }
 
         h1 {
@@ -63,17 +66,17 @@
     </div> 
     <div id="navbar" style="height: 2vw; background-color: #012523; justify-content: center;">
         <div id="navbtn" style="display: inline-flex; margin-right: 50%; text-decoration: none;">
-            <a href="#">
+            <a href="home.html"  style="text-decoration: none;">
                 <div id="btn" style=" text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
                 Home <i class="fa fa-caret-down"></i>
                 </div>
             </a>
-            <a href="Insurance_home.html">
+            <a href="Insurance_home.html"  style="text-decoration: none;">
                 <div id="btn" style="text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
                 Insurance
                 </div>
             </a>
-            <a href="investment_home.html">
+            <a href="investment_home.html"  style="text-decoration: none;">
                 <div id="btn" style=" text-align: center; padding-left: 0.2cm;font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
                 Investments
                 </div>
@@ -87,18 +90,18 @@
                 </div>
               </div>
         </div>
-        <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 89vw;margin-top: 12.3%;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
+        <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 9vw;margin-top: 12.5vw;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
           <div id="id01" class="modal">
-              <form class="modal-content animate" action="/action_page.php" method="post">
+              <form class="modal-content animate" action="#" onsubmit="return login()" method="post">
                   <div class="imgcontainer">
                       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                       <img src="avatar.png" alt="Avatar" class="avatar">
                   </div>
                   <div class="containerform">
                       <label for="uname"><b>Username</b></label>
-                      <input type="text" placeholder="Enter Username" name="uname" required>
+                      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
                       <label for="psw"><b>Password</b></label>
-                      <input type="password" placeholder="Enter Password" name="psw" required>
+                      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
                       <button type="submit">Login</button>
                       <label>
                           <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -111,28 +114,72 @@
               </form>
         </div>
         <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event)
-        {
-            if (event.target == modal)
-            {
-                modal.style.display = "none";
-            }
-        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         </script>
-        </div>
+        </div><button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 9vw;margin-top: 12.5vw;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="#" onsubmit="return login()" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="avatar.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="containerform">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="container" style="background-color:rgb(196, 184, 134)">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+      </div>
+      <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+      </script>
+      </div>
+      <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 9vw;margin-top: 12.5vw;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="#" onsubmit="return login()" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="avatar.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="containerform">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="container" style="background-color:rgb(196, 184, 134)">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+      </div>
+      <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+      </script>
+      </div>
     </div>
     <!-- entire page in page-->
     <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
         <div  style="width: auto;padding: 2%; background-image: url(fin1.jpg);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
-            <p class="heading" style="text-align: center;font-family: Yeseva One, serif; color: #022b28; font-size: 3vw;">Health Insurance</p>
-            <div style="border-radius: 0.5cm; margin-left: auto; margin-right: auto; width: 60%; background-color: rgba(197, 196, 189, 0.61); padding: 0.2cm;">
-                <p style="font-size: 1.5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Health insurance is vital for financial security, covering medical expenses and reducing stress during emergencies. It encourages preventive care, leading to early detection of health issues and better overall health outcomes. Additionally, it provides access to a wide network of healthcare providers, ensuring timely and quality treatment.
+            <p class="heading" style="text-align: center;font-family: Yeseva One, serif; color: #022b28; font-size: 3vw;animation: head_ani ease-in-out 1.5s;">Health Insurance</p>
+            <div style="border-radius: 0.5cm; margin-left: auto; margin-right: auto; width: 60%; background-color: rgba(197, 196, 189, 0.61); padding: 0.2cm;animation: head_ani ease-in-out 1.5s;">
+                <p style="font-size: 1.5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;animation: head_ani ease-in-out 1.5s;">Health insurance is vital for financial security, covering medical expenses and reducing stress during emergencies. It encourages preventive care, leading to early detection of health issues and better overall health outcomes. Additionally, it provides access to a wide network of healthcare providers, ensuring timely and quality treatment.
                     -leading business divisions.</p>
             </div>
-        </div>
+        </div><br>
         <div class="container">
           <h1>Health Insurance Calculator</h1>
           <form id="insuranceForm">
@@ -169,15 +216,28 @@
               <input type="checkbox" id="none" name="medicalCondition" value="None">
               <label for="none">None of these</label><br><br>
   
-              <button type="button" onclick="calculatePremium()">Calculate Premium</button>
+              <button type="button" onclick="calculatePremium()" style="width: 12vw;height: 3vw;background-color: #4CAF50;color: #012523; border: none; border-radius: 4px; cursor: pointer; ">Calculate Premium</button>
           </form>
   
           <div id="result"></div>
       </div>
     </div>
     <br>
-    <div class="btmbar">
-        
+    <div id="btmbar_above">
+        <div id="btm_link"> 
+          <ul style="color: #aaabac;; list-style: none; margin-top: -0.8vw; margin-left: 4vw;">
+            <li><a href="home.html" style="text-decoration: none;color: #aaabac;">Home</a></li>
+            <li style="margin-top: 0.6vw;"><a href="Insurance_home.html" style="text-decoration: none;color: #aaabac;">Insurance</a></li>
+            <li style="margin-top: 0.6vw;"><a href="investment_home.html" style="text-decoration: none;color: #aaabac;">Investment</a></li>
+          </ul>
+        </div>
+        <div id="btm_contact">
+          <a href="https://in.linkedin.com/in/rhea-patel-83b1a2256"><img src="linkdin logo.png" alt="linkdinlogo" style="width: 3vw;height: 3vw; margin-left: 83vw;margin-top: -7vw;position: absolute;"></a>
+          <a href="https://www.linkedin.com/in/anindyazarbade/"><img src="linkdin logo.png" alt="linkdinlogo" style="width: 3vw;height: 3vw; margin-left: 88vw;margin-top: -7vw;position: absolute;"></a>
+        </div>
+      </div>
+      <div class="btmbar">
+        <p style="margin-left: 73vw;margin-top: -1.2vw;">Bluecoast Meridian Finance Services <h4 style="margin-top: -2.7vw; margin-left: 92.5vw;">&copy;</h4></p>
     </div>
     <script>
       function calculatePremium() {

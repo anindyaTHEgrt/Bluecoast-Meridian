@@ -5,11 +5,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gruppo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Red+Rose:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    
+ 
 .container {
             width: 90%;
             margin: 0 auto;
@@ -19,8 +19,8 @@
             padding: 16px;
             background-color: rgb(196, 184, 134);
             color: #012523;
-            background-blend-mode: multiply;
-        }
+}
+
 
         h1 {
             text-align: center;
@@ -59,7 +59,6 @@
             margin-top: 20px;
             font-weight: bold;
         }
-
     </style>
 </head>
 <body style="background-color: #022b28;">  
@@ -73,12 +72,12 @@
                 Home <i class="fa fa-caret-down"></i>
                 </div>
             </a>
-            <a href="Insurance_home.html"  style="text-decoration: none;">
+            <a href="Insurance_home.html" style="text-decoration: none;">
                 <div id="btn" style="text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
                 Insurance
                 </div>
             </a>
-            <a href="investment_home.html"  style="text-decoration: none;">
+            <a href="investment_home.html" style="text-decoration: none;">
                 <div id="btn" style=" text-align: center; padding-left: 0.2cm;font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
                 Investments
                 </div>
@@ -116,57 +115,56 @@
             </form>
       </div>
       <script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
       </script>
       </div>
     </div>
     <!-- entire page in page-->
     <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
         <div  style="width: auto;padding: 2%; background-image: url(fin1.jpg);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
-            <p class="heading" style="text-align: center;font-family: Yeseva One, serif; color: #022b28; font-size: 3vw;animation: head_ani ease-in-out 1.5s;">Term Insurance</p>
+            <p class="heading" style="text-align: center;font-family: Yeseva One, serif; color: #022b28; font-size: 3vw;animation: head_ani ease-in-out 1.5s;">Life Insurance</p>
             <div style="border-radius: 0.5cm; margin-left: auto; margin-right: auto; width: 60%; background-color: rgba(197, 196, 189, 0.61); padding: 0.2cm;animation: head_ani ease-in-out 1.5s;">
-                <p style="font-size: 1.5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;animation: head_ani ease-in-out 1.5s;">Term insurance offers temporary coverage for a set period, providing affordable financial protection to beneficiaries in the event of the insured's death. With lower premiums compared to other types, it's suitable for specific life stages like mortgage payments or supporting dependents until they achieve financial independence.</p>
+                <p style="font-size: 1.5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;animation: head_ani ease-in-out 1.5s;">Life insurance offers financial protection for families upon the policyholder's death, covering expenses like mortgages and education. It comes in different types, including term, whole, and universal life, tailored to diverse needs. Premiums are determined by factors such as age and health. Additionally, life insurance can serve as an investment, accruing cash value over time for borrowing or withdrawals.</p>
             </div>
-        </div> <br>
+        </div><br>
         <div class="container">
-          <h1>Term Insurance Calculator</h1>
-          <form id="term-insurance-calculator">
-            <form id="term-insurance-calculator">
-                <div>
-                    <label for="full-name">Full Name*</label>
-                    <input type="text" id="full-name" name="full-name" required>
-                </div><br><br>
-                <div>
-                    <label for="date-of-birth">Date of Birth*</label>
-                    <input type="date" id="date-of-birth" name="date-of-birth" required>
-                </div><br>
-                <div>
-                    <label for="mobile">Mobile*</label>
-                    <input type="tel" id="mobile" name="mobile" required>
-                </div><br><br>
-                <div>
-                    <label for="annual-income">Annual Income (In Lakhs)</label>
-                    <input type="number" id="annual-income" name="annual-income">
-                </div><br>
-                <div>
-                    <label for="gender">Gender</label>
-                    <select id="gender" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="transgender">Transgender</option>
-                    </select>
-                </div><br>
-                <div>
-                    <label for="tobacco-use">Tobacco/Nicotine Use</label>
-                    <select id="tobacco-use" name="tobacco-use">
-                        <option value="no">No</option>
-                        <option value="yes">Yes</option>
-                    </select>
-                </div><br>
-                <button type="button" onclick="calculatePremium()" style="width: 8vw;height: 3.5vw;background-color: #4CAF50;color: #012523; border: none; border-radius: 4px; cursor: pointer;">Calculate Now</button>
-        </form>
-        <div id="premium-result"></div>
-      </div>
+            <h2>Life Insurance Calculator</h2>
+            <div id="frame1">
+                <form id="startForm">
+                    <label for="name">Name:</label> <br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <br><br>
+                    <label for="number">Phone Number:</label> <br>
+                    <input type="text" id="number" name="number" placeholder="Enter your phone number" required>
+                    <br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Enter your email address" required>
+                    <br><br>
+                    <input type="button" value="Next" onclick="showCalculator()" style="width: 6vw;height: 2.5vw;background-color: #4CAF50;color: #012523; border: none; border-radius: 4px; cursor: pointer;">
+                </form>
+            </div>
+            <div id="insuranceForm" style="display: none;">
+                <form id="calculationForm">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age" placeholder="Enter your age">
+                    <br><br>
+                    <label for="income">Annual Income (Rs):</label>
+                    <input type="text" id="income" name="income" placeholder="Enter your annual income">
+                    <br><br>
+                    <label for="coverage">Desired Coverage Amount (Rs):</label>
+                    <input type="text" id="coverage" name="coverage" placeholder="Enter desired coverage amount">
+                    <br><br>
+                    <label for="health">Health Condition (0-10):</label>
+                    <input type="text" id="health" name="health" placeholder="Enter your health condition">
+                    <br><br>
+                    <label for="debt">Current Debt Amount (Rs):</label>
+                    <input type="text" id="debt" name="debt" placeholder="Enter your current debt amount">
+                    <br><br>
+                    <input type="submit" value="Calculate" style="width: 6vw;height: 2.5vw;background-color: #4CAF50;color: #012523; border: none; border-radius: 4px; cursor: pointer;">
+                </form>
+            </div>
+            <div id="result" class="hidden"></div>
+        </div>
     </div>
     <br>
     <div id="btmbar_above">
@@ -186,31 +184,36 @@
         <p style="margin-left: 73vw;margin-top: -1.2vw;">Bluecoast Meridian Finance Services <h4 style="margin-top: -2.7vw; margin-left: 92.5vw;">&copy;</h4></p>
     </div>
     <script>
-        function calculatePremium() {
-            const age = calculateAge(new Date(document.getElementById('date-of-birth').value));
-            const annualIncome = parseFloat(document.getElementById('annual-income').value || 0) * 100000;
-            const gender = document.getElementById('gender').value;
-            const tobaccoUse = document.getElementById('tobacco-use').value;
-            let premium = 0;
-            if (age >= 18 && age <= 65) {
-                premium = annualIncome * 0.0008;
-                if (gender === 'male') premium *= 1.2;
-                else if (gender === 'female') premium *= 0.8;
-                if (tobaccoUse === 'yes') premium *= 1.5;
-            }
-            else{
-                premium=0;
-            }
-            document.getElementById('premium-result').innerText = `Your monthly premium: Rs ${premium.toFixed(2)}`;
+        document.getElementById('calculationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+    
+            // Get values from form
+            var age = parseInt(document.getElementById('age').value);
+            var income = parseFloat(document.getElementById('income').value);
+            var coverage = parseFloat(document.getElementById('coverage').value);
+            var health = parseFloat(document.getElementById('health').value);
+            var debt = parseFloat(document.getElementById('debt').value);
+    
+            var insuranceAmount = calculateInsuranceAmount(age, income, coverage, health, debt);
+    
+            // Display the result
+            document.getElementById('result').innerHTML = 'Based on your information, your recommended life insurance coverage is: Rs ' + insuranceAmount.toFixed(2);
+            document.getElementById('result').style.display = 'block';
+        });
+    
+        function calculateInsuranceAmount(age, income, coverage, health, debt) {
+            var baseAmount = coverage * 0.1; // Base amount based on coverage
+            var ageFactor = (age < 30) ? 1.2 : (age < 50) ? 1.5 : 2; // Age factor
+            var incomeFactor = (income < 50000) ? 0.8 : (income < 100000) ? 1.2 : 1.5; // Income factor
+            var healthFactor = health / 10; // Health condition factor (scaled to 0-1)
+            var debtFactor = (debt > 0) ? 0.5 : 1; // Debt factor
+            var insuranceAmount = baseAmount * ageFactor * incomeFactor * healthFactor * debtFactor;
+            return insuranceAmount;
         }
-
-        function calculateAge(birthDate) {
-            const today = new Date();
-            let age = today.getFullYear() - birthDate.getFullYear();
-            if (today.getMonth() < birthDate.getMonth() || (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())) {
-                age--;
-            }
-            return age;
+    
+        function showCalculator() {
+            document.getElementById('frame1').style.display = 'none';
+            document.getElementById('insuranceForm').style.display = 'block';
         }
     </script>
 </body>

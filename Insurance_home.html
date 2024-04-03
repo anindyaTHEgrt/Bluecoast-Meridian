@@ -5,6 +5,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Gruppo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Red+Rose:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -49,6 +50,7 @@
           position:absolute;
           font-family: DM Serif Text, serif;
           color: rgb(207, 172, 31);
+          animation: head_ani ease-in-out 1.5s;
         }
 .blue { color: #185875; }
 .yellow { color: #FFF842; }
@@ -124,8 +126,7 @@
         font-family: "DM Serif Text", serif;
         font-weight: 200;
         font-style: italic;
-        }
-        
+      }
   </style>
 </head>
 <body style="background-color: #022b28;">  
@@ -134,17 +135,17 @@
   </div> 
     <div id="navbar" style="height: 2vw; background-color: #012523; justify-content: center; text-decoration: none">
       <div id="navbtn" style="display: inline-flex; margin-right: 50%; text-decoration: none;">
-          <a href="home.html">
+          <a href="home.html" style="text-decoration: none;">
               <div id="btn" style=" text-align: center; font-size: 1.5vw; width: 6vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
               Home
               </div>
           </a>
-          <a href="Insurance_home.html">
+          <a href="Insurance_home.html" style="text-decoration: none;">
               <div id="btn" style="text-align: center; font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif; color: rgb(218, 190, 68);">
               Insurance
               </div>
           </a>
-          <a href="investment_home.html">
+          <a href="investment_home.html" style="text-decoration: none;">
               <div id="btn" style=" text-align: center; padding-left: 0.2cm;font-size: 1.5vw; width: 8vw;font-family: DM Serif Text, serif;color: rgb(218, 190, 68);">
               Investments
               </div>
@@ -158,47 +159,38 @@
             </div>
           </div>
       </div>
-      <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 89vw;margin-top: 12.3%;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
-        <div id="id01" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    <img src="avatar.png" alt="Avatar" class="avatar">
-                </div>
-                <div class="containerform">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                    <button type="submit">Login</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-                <div class="container" style="background-color:rgb(196, 184, 134)">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-            </form>
+      <button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  height: 5vh; margin-left: 9vw;margin-top: 12.5vw;background-color: #01252300;font-family: DM Serif Text, serif; font-size: 1.3vw;color: rgb(218, 190, 68); top: 0%; bottom: 0%;   position:absolute;">Login</button>
+          <div id="id01" class="modal">
+              <form class="modal-content animate" action="#" onsubmit="return login()" method="post">
+                  <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="avatar.png" alt="Avatar" class="avatar">
+                  </div>
+                  <div class="containerform">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                      <button type="submit">Login</button>
+                      <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                  </div>
+                  <div class="container" style="background-color:rgb(196, 184, 134)">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+              </form>
         </div>
         <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event)
-        {
-            if (event.target == modal)
-            {
-                modal.style.display = "none";
-            }
-        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         </script>
         </div>
   </div>
     <!-- entire page in page-->
     <div id="page" style=" padding: 1vw; margin-top: 0.5vw; background-color: rgb(243, 243, 174); height: 100%;  border-radius: 3px;">
       <div  style="width: auto;padding: 2%; background-image: url(bg4.jpg);  background-repeat: no-repeat; background-size: cover;background-color: rgba(243, 243, 174, 0.692) ;background-blend-mode: multiply;">
-        <p class="heading" style=" text-align: center; color: #022b28 ; font-size: 7vw;font-family: Yeseva One, serif">Insurance</p>
+        <p class="heading" style=" text-align: center; color: #022b28 ; font-size: 7vw;font-family: Yeseva One, serif;animation: head_ani ease-in-out 1s;">Insurance</p>
       </div>        
     <div>
       <p class="heading" style=" text-align: center; color: #022b28; font-size: 3vw;font-family: DM Serif Text, serif">What we offer</p>
@@ -206,32 +198,32 @@
         <div id="offering_elements">
           <img src="fin1.jpg" alt="">
           <div id="textarea">
-            <p style="margin-left: 10vw; font-size: 2vw; ">Offering 1</p>
-            <p style="font-size: 1.5vw;margin-left: 4vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <p style="margin-left: 10vw; font-size: 2vw;animation: head_ani ease-in 1.5s; ">Offering 1</p>
+            <p style="font-size: 1.5vw;margin-left: 4vw;animation: head_ani ease-in-out 1.5s;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
           </div>
         </div>
         
         <div id="offering_elements">
           <img src="c2.jpg" alt="">
           <div id="textarea">
-            <p style="margin-left: 10vw; font-size: 2vw; ">Offering 1</p>
-            <p style="font-size: 1.5vw;margin-left: 4vw; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <p style="margin-left: 10vw; font-size: 2vw;animation: head_ani ease-in-out 1.5s;">Offering 1</p>
+            <p style="font-size: 1.5vw;margin-left: 4vw;animation: head_ani ease-in-out 1.5s; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
           </div>
         </div>
         <br><br><br><br><br><br>
         <div id="offering_elements">
           <img src="c3.jpg" alt="">  
           <div id="textarea">
-            <p style="margin-left: 10vw; font-size: 2vw; ">Offering 1</p>
-            <p style="font-size: 1.5vw;margin-left: 4vw; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p style="margin-left: 10vw; font-size: 2vw;animation: head_ani ease-in-out 1.5s; ">Offering 1</p>
+            <p style="font-size: 1.5vw;margin-left: 4vw;animation: head_ani ease-in-out 1.5s; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
         
         <div id="offering_elements">
           <img src="c4.jpg" alt="">
           <div id="textarea">
-            <p style="margin-left: 10vw; font-size: 2vw; ">Offering 1</p>
-            <p style="font-size: 1.5vw;margin-left: 4vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p style="margin-left: 10vw; font-size: 2vw;animation: head_ani ease-in-out 1.5s; ">Offering 1</p>
+            <p style="font-size: 1.5vw;margin-left: 4vw;animation: head_ani ease-in-out 1.5s;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
         <br><br><br><br><br><br><br><br>
@@ -353,8 +345,21 @@
             </table>
     </div>
     <br>
-    <div class="btmbar">
-
+    <div id="btmbar_above">
+      <div id="btm_link"> 
+        <ul style="color: #aaabac;; list-style: none; margin-top: -0.8vw; margin-left: 4vw;">
+          <li><a href="home.html" style="text-decoration: none;color: #aaabac;">Home</a></li>
+          <li style="margin-top: 0.6vw;"><a href="Insurance_home.html" style="text-decoration: none;color: #aaabac;">Insurance</a></li>
+          <li style="margin-top: 0.6vw;"><a href="investment_home.html" style="text-decoration: none;color: #aaabac;">Investment</a></li>
+        </ul>
+      </div>
+      <div id="btm_contact">
+        <a href="https://www.linkedin.com/in/rhea-patel/"><img src="linkdin logo.png" alt="linkdinlogo" style="width: 3vw;height: 3vw; margin-left: 83vw;margin-top: -7vw;position: absolute;"></a>
+        <a href="https://www.linkedin.com/in/anindyazarbade/"><img src="linkdin logo.png" alt="linkdinlogo" style="width: 3vw;height: 3vw; margin-left: 88vw;margin-top: -7vw;position: absolute;"></a>
+      </div>
     </div>
+    <div class="btmbar">
+      <p style="margin-left: 73vw;margin-top: -1.2vw;">Bluecoast Meridian Finance Services <h4 style="margin-top: -2.7vw; margin-left: 92.5vw;">&copy;</h4></p>
+  </div>
 </body>
 </html>
